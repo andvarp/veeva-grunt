@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+
+	<!-- Custom styles for this template -->
+	<link href="{{cfg.paths.css}}" rel="stylesheet">
+
+	<!-- Global Scripts -->
+	<script src="{{cfg.paths.js}}"></script>
+</head>
+<body id="{{ slide_id }}" class="{{ layout-class }}">
+	{{!-- Main content --}}
+    <div class="main-wrapper">
+      <main class="slide-content">
+        {{> body }}
+      </main>
+    </div>
+    {{!-- /Main content --}}
+    {{> inline-scripts}}
+</body>
+</html>

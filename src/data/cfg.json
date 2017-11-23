@@ -1,0 +1,16 @@
+{
+    "paths": {
+        "base": "assets",
+        "js": "<%=cfg.paths.base%>/js/all-js.min.js",
+        "css": "<%=cfg.paths.base%>/css/all-styles.min.css"
+    
+    },
+    "nav_menu":[
+        {
+          "id": "menu-slide-000",
+          "gotoslide-id": "slide-000",
+          "name": "Home"
+        }
+    ],
+    "sub_nav_menu" :{ }
+}

@@ -1,0 +1,15 @@
+---
+---
+<!-- odefsey scripts -->
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		var el = { };
+
+		{{#each envData.slideMap}}
+			el["{{@key}}"] ={km:"{{../envData.vaultIdRoot}}{{this.km}}", pres:"{{../envData.vaultIdRoot}}{{this.pres}}"};
+		{{/each}}
+
+		DHVU.slideMap = el;
+	});
+</script>
